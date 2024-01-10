@@ -1,0 +1,110 @@
+.navbar-brand > img{
+  height: 90px;
+  width: 130px;
+}
+.nav-item > .nav-link{
+  font-size: 18px;
+  color: #138496 !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.primary-btn, .input-group-text{
+  background-color: #138496 !important;
+  color: white !important;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 100% !important;
+  border: none !important;
+}
+/* .nav-button{
+  position: absolute;
+  top: 24px;
+  right: 0;
+} */
+.form-control{
+  border: 2px solid #138496 !important;
+}
+
+.heading > span{
+  color: #138496 !important;
+  font-size: 18px;
+  font-weight: 700px;
+  font-family: 'Roboto', sans-serif;
+}
+.heading > h1{
+  font-size: 38px !important;
+  font-weight: 700px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px !important;
+  padding-top: 20px !important;
+}
+.input-group-text{
+  height: 100%;
+  border-radius: 0 !important;
+  
+}
+.g-5, .gx-5 {
+  --bs-gutter-x: 6rem !important;
+}
+
+/* Testimonial css */
+.testimonial{
+  background-color: #138496;
+}
+.sub-heading>h2{
+ color: white !important;
+ font-size: 40px !important;
+}
+.sub-heading>p{
+  color: white !important;
+  font-size: 24px !important;
+  font-weight: 600;
+  padding: 20px 0;
+ }
+  .testimonial-card{
+ padding: 20px 15px;
+ }
+ .testimonial-card >.card-body> p{
+  font-family: 'Redressed';
+  padding-top: 20px ;
+ }
+.full-star{
+  color: yellow;
+  font-size: 24px;
+}
+.null-star{
+  font-size: 24px;
+}
+
+/* Footer css */
+.footer-line{
+  border-top: 1px solid #138496;
+  border-bottom: 1px solid #138496;
+  padding: 35px 0;
+}
+ul{
+  list-style: none;
+}
+.footer-link{
+  color: #138496;
+  border-bottom: 2px solid #138496;
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.contact-media{
+  color: #138496 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.copyright{
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.copyright > span{
+  color: #138496;
+  font-weight: 600;
+}
