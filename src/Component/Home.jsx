@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import banner from '../assets/banner.jpg'
 import Testimonial from './Testimonial.jsx'
+import Card from './Card.jsx'
 
 const Home = () => {
   return (
@@ -56,6 +57,11 @@ const Home = () => {
             </Row>
         </div>
     </Container>
+    <div className="container">
+        <Row className='g-5 py-5'>
+            <Card/> <Card/> <Card/>
+        </Row>
+    </div>
     <Testimonial/>
     </>
   )
