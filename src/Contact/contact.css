@@ -1,0 +1,14 @@
+.contact-box{
+    border: 1px solid #17a2b8;
+    padding: 25px 35px;
+    height: 100%;
+}
+.contact-icon, .contact-info{
+    color: #17a2b8!important;
+    font-size: 34px;
+    font-weight: 600;
+}
+iframe{
+    width: 100% !important;
+    height: 400px;
+}

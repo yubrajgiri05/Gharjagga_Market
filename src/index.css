@@ -24,6 +24,8 @@ p {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 0px !important;
+  text-align: justify;
+  padding-bottom: 15px;
 }
 a {
   text-decoration: none !important;
@@ -64,6 +66,6 @@ h5 {
 .section-padding{
   padding: 48px 0px;
 }
-ol, ul {
-  padding-left: 0 !important;
+ol, ul,.container-fluid {
+  padding: 0 !important;
 }
