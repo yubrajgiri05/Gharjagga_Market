@@ -1,13 +1,16 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import banner from '../assets/banner.jpg'
-import Testimonial from './Testimonial.jsx'
-import Card from './Card.jsx'
+import Testimonial from '../../General/Testimonial.jsx'
+import Card from '../../General/Card.jsx'
+import '../home.css'
+import Sell from './Sell.jsx'
+import Rent from './Rent.jsx'
 
 const Home = () => {
   return (
     <>
-    <Container>
+    <div className='container-fluid'>
         <div className="section-margin">
             <Row className='g-5'>
                 <Col lg={6}>
@@ -56,12 +59,9 @@ const Home = () => {
                 </Col>
             </Row>
         </div>
-    </Container>
-    <div className="container">
-        <Row className='g-5 py-5'>
-            <Card/> <Card/> <Card/>
-        </Row>
     </div>
+    <Sell/>
+    <Rent/>
     <Testimonial/>
     </>
   )

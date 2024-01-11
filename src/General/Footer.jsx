@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import logo from '../assets/logo.png'
+import logo from '../general/assets/logo.png'
 import { NavLink } from 'react-router-dom'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot,FaPhone } from "react-icons/fa6";

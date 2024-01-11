@@ -14,38 +14,11 @@
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 16px;
-  width: 100% !important;
+  width: fit-content !important;
   border: none !important;
 }
-/* .nav-button{
-  position: absolute;
-  top: 24px;
-  right: 0;
-} */
 .form-control{
   border: 2px solid #138496 !important;
-}
-
-.heading > span{
-  color: #138496 !important;
-  font-size: 18px;
-  font-weight: 700px;
-  font-family: 'Roboto', sans-serif;
-}
-.heading > h1{
-  font-size: 38px !important;
-  font-weight: 700px;
-  font-family: 'Roboto', sans-serif;
-  line-height: 40px !important;
-  padding-top: 20px !important;
-}
-.input-group-text{
-  height: 100%;
-  border-radius: 0 !important;
-  
-}
-.g-5, .gx-5 {
-  --bs-gutter-x: 6rem !important;
 }
 
 /* Testimonial css */

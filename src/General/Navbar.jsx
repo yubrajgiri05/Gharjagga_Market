@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link,NavLink} from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logo from '../General/assets/logo.png'
 
 const Navbar = () => {
   return (
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
                 </li>
                 <li className="nav-item">
-                <NavLink to="/" className="nav-link" >ABOUT US</NavLink>
+                <NavLink to="about" className="nav-link" >ABOUT US</NavLink>
                 </li>
                 <li className="nav-item">
                 <NavLink to="/" className="nav-link">CONTACT US</NavLink>
