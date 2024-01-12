@@ -45,8 +45,8 @@ const Navbar = () => {
             </ul>
             </div>
             <div className="d-flex gap-2 nav-button">
-                <NavLink to="/" className="primary-btn">LOGIN</NavLink>
-                <NavLink to="/" className="primary-btn">REGISTER</NavLink>
+                <NavLink to="login" className="primary-btn">LOGIN</NavLink>
+                <NavLink to="register" className="primary-btn">REGISTER</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span className="navbar-toggler-icon" />
                 </button>

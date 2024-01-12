@@ -17,6 +17,17 @@
   width: fit-content !important;
   border: none !important;
 }
+.secondary-btn{
+  padding: 8px 12px;
+  font-size: 16px;
+  width: fit-content !important;
+  border: none;
+  color: #138496;
+  background-color: white;
+}
+.secondary-btn:hover{
+  border-bottom: #138496 !important;
+}
 .form-control{
   border: 2px solid #138496 !important;
 }
