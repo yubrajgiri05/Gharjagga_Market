@@ -10,6 +10,8 @@ import About from './About/Component/About.jsx'
 import Contact from './Contact/Component/Contact.jsx'
 import LogIn from './LogIn/Component/LogIn.jsx'
 import Register from './LogIn/Component/Register.jsx'
+import ForgetPassword from './LogIn/Component/ForgetPassword.jsx'
+import SearchRent from './Rent/Component/SearchRent.jsx'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path:"register",
         element:<Register/>
+      },
+      {
+        path:"forgetpassword",
+        element:<ForgetPassword/>
+      },
+      {
+        path:"searchrent",
+        element:<SearchRent/>
       }
     ]
   }

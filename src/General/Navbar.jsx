@@ -20,7 +20,7 @@ const Navbar = () => {
                    For Sell
                 </NavLink>
                 <ul className="dropdown-menu">
-                    <li><NavLink to="/" className="dropdown-item">Action</NavLink></li>
+                    <li><NavLink to="searchrent" className="dropdown-item">Action</NavLink></li>
                     <li><NavLink to="/" className="dropdown-item" >Another action</NavLink></li>
                 </ul>
                 </li>

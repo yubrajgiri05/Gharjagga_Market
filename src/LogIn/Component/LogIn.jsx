@@ -39,7 +39,7 @@ const LogIn = () => {
                 <input className="form-control" id="password" name="password" type="password" required />
               </div>
             </div>
-            <NavLink to='/' className='forgetpassword text-start'>Forgot Password</NavLink>
+            <NavLink to='/forgetpassword' className='forgetpassword text-start'>Forgot Password</NavLink>
             <div className="d-flex gap-2 justify-content-center pt-3">
               <input className="primary-btn" type="submit" value="Login"></input>
               <NavLink to='/register' className="secondary-btn">Register</NavLink>

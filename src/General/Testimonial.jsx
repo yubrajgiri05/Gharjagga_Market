@@ -12,7 +12,7 @@ const Testimonial = () => {
                 <h2>TESTIMONILAS</h2>
                 <p>What Our Client Say</p>
             </div>
-            <Row>
+            <Row className='g-3'>
                 <Col lg={4} md={6}>
                     <div className="card testimonial-card">
                         <div className="card-body text-center">
