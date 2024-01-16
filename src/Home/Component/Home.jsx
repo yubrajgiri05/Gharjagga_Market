@@ -5,6 +5,7 @@ import Testimonial from '../../General/Testimonial.jsx'
 import '../home.css'
 import Sell from './Sell.jsx'
 import Rent from './Rent.jsx'
+import Pagination from '../../General/Pagination.jsx'
 
 const Home = () => {
   return (
@@ -60,7 +61,9 @@ const Home = () => {
         </div>
     </div>
     <Sell/>
+    <Pagination/>
     <Rent/>
+    <Pagination/>
     <Testimonial/>
     </>
   )

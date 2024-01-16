@@ -14,11 +14,11 @@ const ForgetPassword = () => {
 
 
         <form action='' className='form-element'>
-                    <div className="form-group d-flex">
-                    <label className="control-label " htmlFor="email">
+                    <div className="form-group d-flex gap-2  align-items-center py-5">
+                    <label className="control-label text-nowrap " htmlFor="email">
                         Email Address
                     </label>
-                        <input className="form-control" id="email" name="email" type="email" required />
+                        <input className="form-control" id="email" name="email" type="email" placeholder='Enter Email' required />
                    </div>
             <div className="d-flex gap-2 justify-content-center pt-3">
               <input className="primary-btn" type="submit" value="Submit"></input>
