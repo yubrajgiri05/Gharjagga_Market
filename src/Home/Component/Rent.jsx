@@ -7,7 +7,7 @@ const Rent = () => {
     <>
       <Container className='section-margin'>
         <h2>FOR RENT</h2>
-        <Row className='g-5'>
+        <Row className='g-3'>
             <Card/>
             <Card/>
         </Row>

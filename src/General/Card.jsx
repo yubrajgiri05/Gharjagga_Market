@@ -12,9 +12,9 @@ const Card = () => {
         <div className="card">
             <img src={card} className="card-img-top" alt="..." style={{height:180}}/>
              <div className="card-body">
-                <h3 className="card-title">Card title</h3>
+                <h3 className="card-title">Kapan</h3>
                 <p className="card-text cost"><span>RS</span> 30000</p>
-                <p className="card-text description">Some quick example text to build </p>
+                <p className="card-text description">It is located in kapan.... </p>
               </div>
         </div>
         </NavLink>

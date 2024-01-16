@@ -25,7 +25,7 @@ const LogIn = () => {
                 <div className="input-group-addon">
                 <FaUserAlt/>
                 </div>
-                <input className="form-control" id="email" name="email" type="email" required />
+                <input className="form-control" placeholder="Enter Email" id="email" name="email" type="email" required />
               </div>
             </div>
             <div className="form-group ">
@@ -36,7 +36,7 @@ const LogIn = () => {
                 <div className="input-group-addon">
                    <RiLockPasswordFill/>
                 </div>
-                <input className="form-control" id="password" name="password" type="password" required />
+                <input className="form-control" placeholder="Enter Password" id="password" name="password" type="password" required />
               </div>
             </div>
             <NavLink to='/forgetpassword' className='forgetpassword text-start'>Forgot Password</NavLink>

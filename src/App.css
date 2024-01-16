@@ -3,10 +3,25 @@
   width: 130px;
 }
 .nav-item > .nav-link{
-  font-size: 18px;
+  font-size: 17px;
   color: #138496 !important;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.dropdown-menu{
+ 
+  background-color: #f9f9f9 !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  padding: 20px 0 !important;
+  --bs-dropdown-link-hover-bg:none !important;
+  --bs-dropdown-link-active-color: #fff;
+}
+ .dropdown-item.active {
+  background-color: #f9f9f9 !important;
+}
+.dropdown-item.active:hover {
+  background-color:none !important;
 }
 .primary-btn, .input-group-text{
   background-color: #138496 !important;
@@ -30,6 +45,14 @@
 }
 .form-control{
   border: 2px solid #138496 !important;
+}
+.search-icon{
+  position: absolute;
+  top: 9px;
+  right: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #138496;
 }
 
 /* Testimonial css */
@@ -77,6 +100,9 @@ ul{
   font-weight: 500;
   padding-bottom: 5px;
   margin-bottom: 20px;
+}
+li>a{
+  white-space:  nowrap;
 }
 .contact-media{
   color: #138496 !important;

@@ -21,7 +21,7 @@ const Home = () => {
                             <h1>Find Your Dream Properties Using Our Platform</h1>
                         </div>
                     <form method="get" action="" className="mt-5">
-                        <Row className="form-group ">
+                        <Row className="form-group gy-3">
                             <Col lg={4} md={4}>
                             <select required="required" name="SearchKey" className="form-control">
                                 <option value selected disabled>--Search-for--</option>

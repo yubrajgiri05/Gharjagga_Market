@@ -15,7 +15,7 @@ const Sell = () => {
                 <button className="primary-btn">HOUSE</button>
             </div>
         </div>
-        <Row className='g-5'>
+        <Row className='g-4'>
             <Card/>
             <Card/>
             <Card/>

@@ -38,7 +38,7 @@ const Register = () => {
                         <div className="input-group-addon">
                         <MdEmail/>
                         </div>
-                        <input className="form-control" id="email" name="email" type="email" required />
+                        <input className="form-control" id="email" name="email" type="email" placeholder='Enter Emaill'required />
                     </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Register = () => {
                         <div className="input-group-addon">
                         <RiLockPasswordFill/>
                         </div>
-                        <input className="form-control" id="password" name="password" type="password" required />
+                        <input className="form-control" id="password" name="password" type="password" required  placeholder='Enter Password'/>
                     </div>
                     </div>
                     <div className="form-group ">
@@ -62,7 +62,7 @@ const Register = () => {
                         <div className="input-group-addon">
                         <RiLockPasswordFill/>
                         </div>
-                        <input className="form-control" id="password" name="password" type="password" required />
+                        <input className="form-control" id="password" name="password" type="password" required placeholder='Re-enter Password'/>
                     </div>
                     </div>
            </div>
