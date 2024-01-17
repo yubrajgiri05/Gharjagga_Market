@@ -95,7 +95,98 @@ const Dashboard = () => {
                          <FaHome className="profile-icon"/> For Sell
                     </div>
                     <div className="dashboard-information">
-                       
+                       <form action="">
+                         <Row className='g-4'>
+                            <Col lg={4} md={6}>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                                Type
+                                    </label>
+                                    <select required="required" name="SearchKey" className="form-control">
+                                                <option value selected disabled>--Type for--</option>
+                                                <optgroup label="Properties">
+                                                <option value="House(For home Purpose)"> House</option>
+                                                <option value="House(For Commercial Purpose)">Commercial House</option>
+                                                <option value="Land"> Land</option>	
+                                                <option value="Apartment"> Apartment</option>	
+                                                <option value="Restaurant"> Restaurant</option>	
+                                                </optgroup>
+                                                <optgroup label="Rent">
+                                                <option value="Room"> Room</option>
+                                                <option value="Office">Office</option>
+                                                <option value="Apartment">Apartment</option>
+                                                <option value="RentLand">Land</option>
+                                                <option value="RentHouse">House</option>
+                                                </optgroup>
+                                </select>
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    Area(Sq.ft/Anna)
+                                    </label>
+                                    <input className="form-control" placeholder="Area" id="area" name="area" type="text" required />
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    Nearest Landmark
+                                    </label>
+                                    <input className="form-control" placeholder="Nearest Landmark" id="landmark" name="landmark" type="text" required />
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    House Face
+                                    </label>
+                                    <select required="required" name="SearchKey" className="form-control">
+                                                <option value selected disabled>--House Face--</option>
+                                                <option value="east"> EAST</option>
+                                                <option value="west"> WEST</option>	
+                                                <option value="north"> NORTH</option>	
+                                                <option value="south"> SOUTH</option>	
+                                </select>
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    Floor
+                                    </label>
+                                    <input className="form-control" placeholder="Floor" id="landmark" name="landmark" type="text" required />
+                            </div>
+                            </Col>
+                            <Col lg={4} md={6}>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Location
+                                        </label>
+                                        <input className="form-control" placeholder="Location" id="location" name="location" type="text" required />
+                                </div>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Road(ft)
+                                        </label>
+                                        <input className="form-control" placeholder="Road" id="road" name="road" type="text" required />
+                                </div>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Price (RS)
+                                        </label>
+                                        <input className="form-control" placeholder="Rs. XXXX" id="price" name="price" type="text" required />
+                                </div>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Parking
+                                        </label>
+                                        <input className="form-control" placeholder="1 Car, 2 Bike" id="parking" name="parking" type="text" required />
+                                </div>
+                            </Col>
+                            <Col lg={4} md={12}>
+                            <h3 className='text-center'>Upload Properties Image</h3>
+                            <span>(Maximum supports 6 Images. Each image must be below 1MB. )</span>
+                            
+                               <input type="file" name="image" />
+
+                            </Col>
+                         </Row>
+                         <input className="primary-btn mt-3 text-center" type="submit" value="Submit"></input>
+                       </form>
                     </div>
                 </div>
                 <div className="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab" tabIndex={0}>
@@ -126,6 +217,30 @@ const Dashboard = () => {
                     </div>
                     <div className="dashboard-information">
                     <p className='error'>Change Password</p>
+                    <form action="">
+                        <div className="form-group ">
+                            <label className="control-label " htmlFor="password">
+                                 Old Password
+                             </label>
+                            <input className="form-control" placeholder="***********" id="password" name="password" type="password" required />
+                        </div>
+                        <div className="form-group ">
+                            <label className="control-label " htmlFor="password">
+                                New Password
+                             </label>
+                            <input className="form-control" placeholder="***********" id="password" name="password" type="password" required />
+                        </div>
+                        <div className="form-group ">
+                            <label className="control-label " htmlFor="password">
+                                Confirm New Password
+                             </label>
+                            <input className="form-control" placeholder="***********" id="password" name="password" type="password" required />
+                        </div>
+                        <input className="primary-btn mt-3" type="submit" value="Update"></input>
+                    </form>    
+                    <div className="delete-account text-danger">
+                        Delete Account
+                    </div>
                     </div>
                 </div>
             </div>
