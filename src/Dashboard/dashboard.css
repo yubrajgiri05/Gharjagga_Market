@@ -1,0 +1,61 @@
+.user-name{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 8px;
+    border-bottom: 2px solid rgb(173, 216, 230);
+    width: 100%;
+    border-radius: none !important;
+    text-align: center;
+}
+.profile-icon{
+    font-size: 22px;
+}
+.profile-icon-arrow{
+    font-size: 42px;
+}
+.nav-pills{
+    border: 1px solid #138496;
+    padding: 10px 10px 40px;
+}
+.nav-pills > .nav-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid rgb(173, 216, 230);
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 0 !important;
+    font-size: 16px;
+}
+.nav-pills >.nav-link.active {
+    color: black !important;
+    background-color:white !important;
+}
+.nav-pills > .nav-link:hover{
+    background-color: #add8e6!important;
+    color: white !important;
+}
+.dashboard-breadcurmb{
+    border: 1px solid #138496 ;
+    color: #138496 ;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+.dashboard-information{
+    border: 1px solid #138496 ;
+    padding: 30px 10px;
+}
+.dashboard-information>h2{
+    border-bottom: 1px solid #138496;
+    padding-bottom: 20px !important;
+}
+.dashboard-information>.error{
+    padding-top: 20px!important;
+    font-size: 24px !important;
+    font-weight: 600;
+}
