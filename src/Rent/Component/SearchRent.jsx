@@ -2,13 +2,14 @@ import React from 'react'
 import {Row, Col } from 'react-bootstrap'
 import '../searchrent.css'
 import Card from '../../General/Card'
+import Footer from '../../General/Footer'
 
 const SearchRent = () => {
   return (
     <>
       <div className="conatiner-fluid d-flex justify-content-center align-items-center">
       <form method="get" action="" className="mt-5 ">
-                        <Row className="form-group ">
+                        <Row className="form-group gy-3">
                             <Col lg={4} md={4}>
                             <select required="required" name="SearchKey" className="form-control">
                                 <option value selected disabled>--Search-for--</option>
@@ -44,7 +45,7 @@ const SearchRent = () => {
       </div>
       <div className="container section-margin">
       <div className="rent-box">
-        <div className="searchresult d-flex gap-2 align-items-center">
+        <div className="searchresult d-flex gap-2 align-items-center flex-wrap">
             <span>Results : </span>
             <p> Your searched for "House".</p>
         </div>
@@ -55,6 +56,7 @@ const SearchRent = () => {
         </Row>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

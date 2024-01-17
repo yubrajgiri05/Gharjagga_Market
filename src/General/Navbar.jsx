@@ -2,6 +2,7 @@ import React from 'react'
 import { Link,NavLink} from 'react-router-dom'
 import logo from '../General/assets/logo.png'
 import { CiSearch } from "react-icons/ci";
+import { FaGripLines } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
                 <img src={logo} alt="" srcset="" />
             </Link>
             <div className="collapse navbar-collapse me-3" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-3 align-items-center">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
                 <li className="nav-item">
                 <NavLink to="/" className="nav-link active" aria-current="page">HOME</NavLink>
                 </li>
@@ -49,14 +50,14 @@ const Navbar = () => {
                 
 
             </ul>
+            <form className="d-flex position-relative px-3" role="search" style={{width:'fit-content'}}>
+                     <input className="form-control position-relative me-2" type="search" placeholder="Search" aria-label="Search" />
+                     <CiSearch className="search-icon"/> 
+            </form>
             </div>
             <div className="d-flex gap-2 nav-button pe-5">
-                <form className="d-flex position-relative" role="search">
-                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                     <CiSearch className="search-icon"/> 
-                 </form>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <span className="navbar-toggler-icon" />
+                    < FaGripLines className='toggler-icon'/>
                 </button>
             </div>
         </div>

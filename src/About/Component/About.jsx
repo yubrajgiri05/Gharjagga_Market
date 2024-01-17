@@ -1,14 +1,32 @@
 import React from 'react'
 import '../about.css'
-import Breadcrumb from '../../General/Breadcrumb'
+import '../../General/breadcrumb.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import about from '../assets/about.png'
 import Testimonial from '../../General/Testimonial'
+import Footer from '../../General/Footer'
+import breadcrumb from '../assets/breadcrumb.jpg'
+import { NavLink } from 'react-router-dom'
 
 const About = () => {
   return (
     <>
-     <Breadcrumb/>
+    <div className="container-fluid">
+        <div className="relative bread-img">
+            <img src={breadcrumb} alt=""/>
+           <div className="container"> <div className="bread-title">About Us</div></div>
+        </div>
+        <div className="breadcrumb-whole">
+            <div className="container">
+                <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><NavLink to='/'>Home</NavLink></li>
+                        <li className="breadcrumb-item active" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
      <Container>
         <div className="section-margin">
             <Row className='g-5'>
@@ -28,6 +46,7 @@ const About = () => {
         </div>
      </Container>
      <Testimonial/>
+     <Footer/>
     </>
   )
 }

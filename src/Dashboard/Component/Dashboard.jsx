@@ -95,7 +95,7 @@ const Dashboard = () => {
                          <FaHome className="profile-icon"/> For Sell
                     </div>
                     <div className="dashboard-information">
-                       <form action="">
+                       <form action=""  className='d-flex flex-column align-items-center'>
                          <Row className='g-4'>
                             <Col lg={4} md={6}>
                             <div className="form-group ">
@@ -179,9 +179,9 @@ const Dashboard = () => {
                             </Col>
                             <Col lg={4} md={12}>
                             <h3 className='text-center'>Upload Properties Image</h3>
-                            <span>(Maximum supports 6 Images. Each image must be below 1MB. )</span>
+                            <p>(Maximum supports 6 Images. Each image must be below 1MB. )</p>
                             
-                               <input type="file" name="image" />
+                            <input type='file' title=" "/>
 
                             </Col>
                          </Row>
@@ -196,7 +196,92 @@ const Dashboard = () => {
                          <FaPaperPlane className="profile-icon"/> For Rent
                     </div>
                     <div className="dashboard-information">
-                        
+                       <form action="" className='d-flex flex-column align-items-center' >
+                         <Row className='g-4'>
+                            <Col lg={4} md={6}>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                                Type
+                                    </label>
+                                    <select required="required" name="SearchKey" className="form-control">
+                                                <option value selected disabled>--Type for--</option>
+                                                <optgroup label="Properties">
+                                                <option value="House(For home Purpose)"> House</option>
+                                                <option value="House(For Commercial Purpose)">Commercial House</option>
+                                                <option value="Land"> Land</option>	
+                                                <option value="Apartment"> Apartment</option>	
+                                                <option value="Restaurant"> Restaurant</option>	
+                                                </optgroup>
+                                                <optgroup label="Rent">
+                                                <option value="Room"> Room</option>
+                                                <option value="Office">Office</option>
+                                                <option value="Apartment">Apartment</option>
+                                                <option value="RentLand">Land</option>
+                                                <option value="RentHouse">House</option>
+                                                </optgroup>
+                                </select>
+                            </div>
+                            <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Parking
+                                        </label>
+                                        <input className="form-control" placeholder="1 Car, 2 Bike" id="parking" name="parking" type="text" required />
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    Floor
+                                    </label>
+                                    <input className="form-control" placeholder="Floor" id="landmark" name="landmark" type="text" required />
+                            </div>
+                            <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    House Face
+                                    </label>
+                                    <select required="required" name="SearchKey" className="form-control">
+                                                <option value selected disabled>--House Face--</option>
+                                                <option value="east"> EAST</option>
+                                                <option value="west"> WEST</option>	
+                                                <option value="north"> NORTH</option>	
+                                                <option value="south"> SOUTH</option>	
+                                </select>
+                            </div>
+                            </Col>
+                            <Col lg={4} md={6}>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Location
+                                        </label>
+                                        <input className="form-control" placeholder="Location" id="location" name="location" type="text" required />
+                                </div>
+                                <div className="form-group ">
+                                    <label className="control-label " htmlFor="password">
+                                    Nearest Landmark
+                                    </label>
+                                    <input className="form-control" placeholder="Nearest Landmark" id="landmark" name="landmark" type="text" required />
+                            </div>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Price (RS)
+                                        </label>
+                                        <input className="form-control" placeholder="Rs. XXXX" id="price" name="price" type="text" required />
+                                </div>
+                                <div className="form-group ">
+                                        <label className="control-label " htmlFor="password">
+                                        Road(ft)
+                                        </label>
+                                        <input className="form-control" placeholder="Road" id="road" name="road" type="text" required />
+                                </div>
+                            </Col>
+                            <Col lg={4} md={12}>
+                            <h3 className='text-center'>Upload Properties Image</h3>
+                            <p>(Maximum supports 6 Images. Each image must be below 1MB. )</p>
+                            
+                               <input type="file" name="image" />
+
+                            </Col>
+                         </Row>
+                         <input className="primary-btn mt-3 " type="submit" value="Submit"></input>
+                       </form>
                     </div>
                 </div>
                 <div className="tab-pane fade" id="v-pills-chats" role="tabpanel" aria-labelledby="v-pills-chats-tab" tabIndex={0}>

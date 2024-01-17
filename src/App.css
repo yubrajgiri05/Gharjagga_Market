@@ -23,14 +23,17 @@
 .dropdown-item.active:hover {
   background-color:none !important;
 }
-.primary-btn, .input-group-text{
+.primary-btn, .input-group-text {
   background-color: #138496 !important;
   color: white !important;
   border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 16px;
+  padding: 6px 10px;
+  font-weight: 500;
+  font-size: 15px;
   width: fit-content !important;
   border: none !important;
+  display: flex;
+  align-items: center;
 }
 .secondary-btn{
   padding: 8px 12px;
@@ -46,13 +49,18 @@
 .form-control{
   border: 2px solid #138496 !important;
 }
+.form-control:focus {
+  border-color: #138496 !important;
+  box-shadow:none !important;
+}
 .search-icon{
   position: absolute;
   top: 9px;
-  right: 18px;
+  right: 28px;
   font-size: 22px;
   font-weight: 600;
   color: #138496;
+  cursor: pointer;
 }
 
 /* Testimonial css */
@@ -138,4 +146,27 @@ li>a{
   border-left: 1px solid white;
   border-right: 1px solid white;
   color: white !important;
+}
+.navbar-toggler {
+  background-color: #138496 !important;
+}
+.navbar-toggler:focus {
+  box-shadow:none !important;
+}
+.toggler-icon {
+  color: white !important;
+  font-size: 26px;
+
+}
+@media (max-width: 992px){
+  .nav-button{
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+  .navbar-nav {
+    justify-content: flex-start !important;
+    align-items: start !important;
+    padding-left: 16px !important;
+}
 }
