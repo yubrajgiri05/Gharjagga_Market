@@ -4,8 +4,14 @@ import { NavLink } from 'react-router-dom'
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneAlt,FaUser } from "react-icons/fa";
 import { Col, Container, Row } from 'react-bootstrap';
+import one from '../assets/one.jpg'
+import two from '../assets/two.jpg'
+import three from '../assets/three.jpg'
+import four from '../assets/four.jpg'
+
 
 const Innerpage = () => {
+   
   return (
     <>
       <div className="container-fluid">
@@ -38,6 +44,20 @@ const Innerpage = () => {
         </div>
         <div className="innercard-detail gallary">
             <h2>Gallary</h2>
+           <Row className='g-1'>
+                <Col lg={6} md={6}>
+                    <img src={one} alt="" />
+                </Col>
+                <Col lg={6} md={6}>
+                    <img src={two} alt="" />
+                </Col>
+                <Col lg={6} md={6}>
+                    <img src={three} alt="" />
+                </Col>
+                <Col lg={6} md={6}>
+                    <img src={four} alt="" />
+                </Col>
+           </Row>
         </div>
         <div className="innercard-detail about-listing">
             <h2>About Listing</h2>
