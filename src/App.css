@@ -169,4 +169,7 @@ li>a{
     align-items: start !important;
     padding-left: 16px !important;
 }
+.innercard-detail{
+  width: 100% !important;
+}
 }

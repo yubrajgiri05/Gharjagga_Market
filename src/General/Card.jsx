@@ -8,7 +8,7 @@ const Card = () => {
   return (
     <>
       <Col lg={4} md={6}>
-        <NavLink to='/'>
+        <NavLink to='/cardinner'>
         <div className="card">
             <img src={card} className="card-img-top" alt="..." style={{height:180}}/>
              <div className="card-body">

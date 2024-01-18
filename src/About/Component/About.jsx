@@ -14,7 +14,11 @@ const About = () => {
     <div className="container-fluid">
         <div className="relative bread-img">
             <img src={breadcrumb} alt=""/>
-           <div className="container"> <div className="bread-title">About Us</div></div>
+           <div className="container">
+             <div className="bread-middle">
+                <div className="bread-title">About Us</div>
+             </div>
+            </div>
         </div>
         <div className="breadcrumb-whole">
             <div className="container">

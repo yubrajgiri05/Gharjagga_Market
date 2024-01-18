@@ -13,3 +13,50 @@
     padding: 0 !important;
     border-bottom: 1px solid rgb(114, 114, 114);
 }
+.innercard-detail{
+    padding:40px 20px;
+    border: 1px solid #C0C0C0;
+    width: 70%;
+}
+.innercard-info{
+    color: #138496 ;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:25px 0;
+    border-bottom: 1px solid rgb(114, 114, 114);
+}
+.innercard-info p{
+    padding: 0 0 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.innercard-price{
+    color: #138496 ;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:25px 0;
+}
+.innercard-price span{
+    color: red;
+    font-size: 24px;
+}
+.innercard-price p{
+    padding: 0 0 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.innercard-detail h3{
+    font-size: 20px !important;
+    padding-top: 25px !important;
+    text-decoration: underline;
+}
+.innercard-detail .innercard-infoo{
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #138496 !important;
+}

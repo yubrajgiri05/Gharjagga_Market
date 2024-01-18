@@ -13,6 +13,7 @@ import Register from './LogIn/Component/Register.jsx'
 import ForgetPassword from './LogIn/Component/ForgetPassword.jsx'
 import SearchRent from './Rent/Component/SearchRent.jsx'
 import Dashboard from './Dashboard/Component/Dashboard.jsx'
+import Innerpage from './Rent/Component/Innerpage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path:"dashboard",
         element:<Dashboard/>
+      },
+      {
+        path:"cardinner",
+        element:<Innerpage/>
       }
     ]
   }

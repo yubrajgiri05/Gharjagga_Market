@@ -13,18 +13,33 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.352);
+    background-color: rgba(0, 0, 0, 0.522);
     height: 100%;
     width: 100%;
 }
-.bread-title{
+.bread-middle{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 22;
+}
+.bread-title{
     color: white;
     font-size: 40px;
     font-weight: 600;
+    padding-bottom: 10px;
+}
+.bread-info,.bread-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.bread-price span{
+ font-size: 36px;
 }
 .breadcrumb{
     padding: 25px 0 !important;

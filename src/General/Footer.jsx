@@ -21,10 +21,10 @@ const Footer = () => {
                         <div className="footer-link">Helpful Links:</div>
                         <ul className='d-flex flex-column align-items-center gap-3'>
                             <li className="nav-item">
-                                <NavLink to="about" className="nav-link" >ABOUT US</NavLink>
+                                <NavLink to="/about" className="nav-link" >ABOUT US</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="contact" className="nav-link">CONTACT US</NavLink>
+                                <NavLink to="/contact" className="nav-link">CONTACT US</NavLink>
                             </li>   
                         </ul>
                     </Col>
