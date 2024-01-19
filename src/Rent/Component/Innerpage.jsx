@@ -8,6 +8,7 @@ import one from '../assets/one.jpg'
 import two from '../assets/two.jpg'
 import three from '../assets/three.jpg'
 import four from '../assets/four.jpg'
+import Footer from '../../General/Footer'
 
 
 const Innerpage = () => {
@@ -112,6 +113,7 @@ const Innerpage = () => {
             </Row>
         </div>
     </Container>
+    <Footer/>
     </>
   )
 }
