@@ -69,14 +69,14 @@ const Navbar = () => {
         {/* side navbar */}
             <div className="offcanvas offcanvas-start d-flex justify-content-between flex-row" data-bs-backdrop="static" tabIndex={-1} id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-2 pt-3">
-                        <li className="nav-item">
+                        <li className="nav-item" data-bs-dismiss="offcanvas">
                         <NavLink to="/" className="nav-link active" aria-current="page">HOME</NavLink>
                         </li>
-                        <li className="nav-item dropdown">
+                        <li className="nav-item dropdown" >
                         <NavLink to="/" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         For Sell
                         </NavLink>
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
                             <li><NavLink to="searchrent" className="dropdown-item">House(For home Purpose)</NavLink></li>
                             <li><NavLink to="/" className="dropdown-item" >Home(For Commercial Purpose)</NavLink></li>
                             <li><NavLink to="/" className="dropdown-item" >Land</NavLink></li>
@@ -88,19 +88,19 @@ const Navbar = () => {
                         <NavLink to="/" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         For Rent
                         </NavLink>
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu" data-bs-dismiss="offcanvas" >
                             <li><NavLink to="/" className="dropdown-item">Action</NavLink></li>
                             <li><NavLink to="/" className="dropdown-item" >Another action</NavLink></li>
                         </ul>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" data-bs-dismiss="offcanvas">
                         <NavLink to="about" className="nav-link" >ABOUT US</NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" data-bs-dismiss="offcanvas">
                         <NavLink to="contact" className="nav-link">CONTACT US</NavLink>
                         </li>
-                        <li> <NavLink to="login" className="login-btn nav-link">LOGIN</NavLink></li>
-                        <li><NavLink to="register" className="login-btn nav-link">REGISTER</NavLink></li> 
+                        <li  data-bs-dismiss="offcanvas"> <NavLink to="login" className="login-btn nav-link">LOGIN</NavLink></li>
+                        <li  data-bs-dismiss="offcanvas"><NavLink to="register" className="login-btn nav-link">REGISTER</NavLink></li> 
                         <form className="d-flex position-relative" role="search" style={{width:'fit-content'}}>
                             <input className="form-control position-relative me-2" type="search" placeholder="search" aria-label="Search" />
                             <CiSearch className="search-icon"/> 

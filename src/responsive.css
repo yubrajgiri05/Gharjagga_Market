@@ -65,4 +65,7 @@
     .innercard-info, .innercard-price {
         font-size: 20px !important;
     }
+    .rent-box {
+        padding: 50px 10px !important;
+    }
 }
