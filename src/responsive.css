@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1200px){
+    .login-box {
+        width: 50% !important;
+    }
+    .nav-item > .nav-link{
+        font-size: 16px !important;
+      }
+
+}
+@media only screen and (max-width: 992px){
+    .login-box {
+        width: 80% !important;
+    }
+    .navbar-collapse{
+        border: 2px solid red !important;
+        height: 100vh;
+        width: 100vw;
+    }
+    .bread-middle {
+        left: 5%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .login-box,.register-box {
+        width: 100% !important;
+    }
+    .form-element .register-colume{
+        flex-direction: column !important;
+    }
+    .heading > h1 {
+        font-size: 30px !important;
+    }
+    .bread-title {
+        font-size: 28px !important;
+    }
+    .bread-info, .bread-price {
+        font-size: 20px !important;
+        flex-direction: column;
+        align-items: start !important;
+    }
+    .bread-price span {
+        font-size: 25px !important;
+    }
+    .innercard-info,.innercard-price {
+        flex-direction: column;
+        align-items: start !important;
+    }
+}
+@media only screen and (max-width: 525px){
+    .login-box, .register-box {
+        padding: 15px 25px !important;
+    }
+    .bread-info, .bread-price {
+        font-size: 18px !important;
+    }
+    .bread-price span {
+        font-size: 22px !important;
+    }
+    .breadcrumb-item, .breadcrumb-item.active {
+        font-size: 16px !important;
+    }
+    .innercard-price span {
+        font-size: 20px !important;
+    }
+    .innercard-info, .innercard-price {
+        font-size: 20px !important;
+    }
+}

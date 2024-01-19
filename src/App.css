@@ -1,6 +1,17 @@
+.navbar{
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;
+  position: fixed;
+  margin-bottom: 20px;
+}
 .navbar-brand > img{
   height: 90px;
   width: 130px;
+}
+a {
+  color: none;
+  text-decoration: none;
+  background-color: transparent;
 }
 .nav-item > .nav-link{
   font-size: 17px;
@@ -61,6 +72,12 @@
   font-weight: 600;
   color: #138496;
   cursor: pointer;
+}
+.login-btn{
+  font-size: 17px !important;
+  color: #138496 !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600 !important;
 }
 
 /* Testimonial css */
@@ -172,4 +189,24 @@ li>a{
 .innercard-detail{
   width: 100% !important;
 }
+}
+
+/* sidnavbar */
+.offcanvas .nav-item  .nav-link{
+  font-size: 22px !important;
+}
+.offcanvas .login-btn{
+  font-size: 22px !important;
+}
+.btn-close:hover {
+  color: none;
+}
+.btn-close{
+  color: white;
+}
+.offcanvas .navbar-toggler{
+  height: fit-content !important;
+  padding:8px 15px;
+  margin: 10px;
+  border-radius: 8px;
 }

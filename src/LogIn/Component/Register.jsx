@@ -18,7 +18,7 @@ const Register = () => {
 
 
         <form action='' className='form-element'>
-                <div className="d-flex gap-4 justify-content-center">
+                <div className="d-flex gap-3 justify-content-center register-colume">
                     <div className="form-group ">
                     <label className="control-label " htmlFor="name">
                        Name
@@ -42,7 +42,7 @@ const Register = () => {
                     </div>
                     </div>
                 </div>
-           <div className="d-flex gap-4 justify-content-center">
+           <div className="d-flex gap-3 justify-content-center  register-colume">
                 <div className="form-group ">
                     <label className="control-label " htmlFor="password">
                         Password

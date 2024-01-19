@@ -20,8 +20,14 @@ const Innerpage = () => {
            <div className="container ">
                 <div className="bread-middle">
                     <div className="bread-title">House(For home Purpose) on sell at Teku</div>
-                    <div className="bread-info"><CiLocationOn/>  Teku <FaPhoneAlt/> 9702054996 / 9849053307 </div>
-                    <div className="bread-price">Price: <span>7,75,00,000.00/--</span>  Date:2023/08/10</div>
+                    <div className="bread-info">
+                     <div className="d-flex align-items-center gap-3"><CiLocationOn/>  Teku</div>
+                      <div className="d-flex gap-3 align-items-center"> <FaPhoneAlt/> 9702054996  9849053307</div>
+                    </div>
+                    <div className="bread-price"> 
+                        <div className="d-flex align-items-center gap-3"> Price: <span>7,75,00,000.00/</span> </div>
+                        <div className="d-flex align-items-center gap-3">Date: 2023/08/10</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,8 +45,14 @@ const Innerpage = () => {
     <Container className='section-margin'>
         <div className="innercard-detail">
             <h1 >House(For home Purpose) on sell at Teku</h1>
-            <div className="innercard-info"><CiLocationOn/>  <p>Teku</p> <FaPhoneAlt/> <p>9702054996 / 9849053307</p> </div>
-            <div className="innercard-price">Price: <span>7,75,00,000.00/--</span>  Date: <p>2023/08/10</p></div>
+            <div className="innercard-info">
+                <div className="d-flex align-items-center gap-3"><CiLocationOn/>  <p>Teku</p></div>
+                <div className="d-flex align-items-center gap-3"> <FaPhoneAlt/> <p>9702054996  9849053307</p></div>
+             </div>
+            <div className="innercard-price">
+               <div className="d-flex align-items-center gap-3"> Price: <span>7,75,00,000.00/</span> </div>
+                 <div className="d-flex align-items-center gap-3">Date: <p>2023/08/10</p></div>
+            </div>
         </div>
         <div className="innercard-detail gallary">
             <h2>Gallary</h2>

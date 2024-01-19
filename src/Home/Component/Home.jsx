@@ -12,7 +12,6 @@ const Home = () => {
   return (
     <>
     <div className='container-fluid'>
-        <div className="section-margin">
             <Row className='g-5'>
                 <Col lg={6}>
                 <img src={banner} alt="" />
@@ -22,7 +21,7 @@ const Home = () => {
                             <span>Real Estate Searching Platform</span>
                             <h1>Find Your Dream Properties Using Our Platform</h1>
                         </div>
-                    <form method="get" action="" className="mt-5">
+                    <form method="get" action="">
                         <Row className="form-group gy-3">
                             <Col lg={4} md={4}>
                             <select required="required" name="SearchKey" className="form-control">
@@ -60,7 +59,6 @@ const Home = () => {
                 </Col>
             </Row>
         </div>
-    </div>
     <Sell/>
     <Pagination/>
     <Rent/>

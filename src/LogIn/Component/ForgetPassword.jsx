@@ -14,7 +14,7 @@ const ForgetPassword = () => {
 
 
         <form action='' className='form-element'>
-                    <div className="form-group d-flex gap-2  align-items-center py-5">
+                    <div className="form-group d-flex gap-2  align-items-center register-colume py-3">
                     <label className="control-label text-nowrap " htmlFor="email">
                         Email Address
                     </label>
