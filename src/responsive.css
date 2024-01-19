@@ -19,6 +19,9 @@
     .bread-middle {
         left: 5%;
     }
+    .section-margin {
+        margin: 35px 0px !important;
+    }
 }
 @media only screen and (max-width: 768px){
     .login-box,.register-box {
@@ -67,5 +70,8 @@
     }
     .rent-box {
         padding: 50px 10px !important;
+    }
+    .section-margin {
+        margin: 20px 0px !important;
     }
 }
