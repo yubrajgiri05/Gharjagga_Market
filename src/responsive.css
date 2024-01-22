@@ -74,4 +74,17 @@
     .section-margin {
         margin: 20px 0px !important;
     }
+    .dashboard-information > form {
+        border: 1px solid #a9c4c8;
+        padding: 10px !important;
+        margin: 2px !important;
+    }
+    .colum{
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+    }
+    .contact-media {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
 }
