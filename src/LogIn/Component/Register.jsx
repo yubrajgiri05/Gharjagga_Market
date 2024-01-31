@@ -1,10 +1,10 @@
 import React from 'react'
 import '../login.css'
 import logo from '../../General/assets/logo.png'
-import { FaUserAlt } from "react-icons/fa";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { MdEmail } from "react-icons/md";
-import { NavLink } from 'react-router-dom';
+import {FaUserAlt} from "react-icons/fa";
+import {RiLockPasswordFill} from "react-icons/ri";
+import {MdEmail } from "react-icons/md";
+import {NavLink} from 'react-router-dom';
 
 const Register = () => {
   return (
