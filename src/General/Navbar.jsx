@@ -94,10 +94,10 @@ const Navbar = () => {
                         </ul>
                         </li>
                         <li className="nav-item" data-bs-dismiss="offcanvas">
-                        <NavLink to="about" className="nav-link" >ABOUT US</NavLink>
+                        <NavLink to="/about" className="nav-link" >ABOUT US</NavLink>
                         </li>
                         <li className="nav-item" data-bs-dismiss="offcanvas">
-                        <NavLink to="contact" className="nav-link">CONTACT US</NavLink>
+                        <NavLink to="/contact" className="nav-link">CONTACT US</NavLink>
                         </li>
                         <li  data-bs-dismiss="offcanvas"> <NavLink to="login" className="login-btn nav-link">LOGIN</NavLink></li>
                         <li  data-bs-dismiss="offcanvas"><NavLink to="register" className="login-btn nav-link">REGISTER</NavLink></li> 
