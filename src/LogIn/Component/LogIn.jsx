@@ -6,11 +6,23 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 const LogIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [state, setState] = useState({
+    email:'',
+    password:''
 
-  function handleSumbit(event) {
+  });
+
+  const handleChange = (event)=>{
+    const {name, value}=event.target;
+    setState({
+      ...state,
+      [name]:value
+    });
+  }
+
+  const handleSubmit = (event)=>{
     event.preventDefault();
+    console.log('state',state);
   }
 
   return (
@@ -22,7 +34,7 @@ const LogIn = () => {
           </div>
           <h2 className="text-center">LOGIN</h2>
 
-          <form onSubmit={handleSumbit} className="form-element">
+          <form onSubmit={handleSubmit}  className="form-element">
             <div className="form-group ">
               <label className="control-label " htmlFor="email">
                 Email Address
@@ -38,7 +50,8 @@ const LogIn = () => {
                   name="email"
                   type="email"
                   required
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={state.email}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -57,7 +70,8 @@ const LogIn = () => {
                   name="password"
                   type="password"
                   required
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={state.password}
+                  onChange={handleChange}
                 />
               </div>
             </div>
