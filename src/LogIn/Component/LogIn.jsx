@@ -4,27 +4,26 @@ import logo from "../../General/assets/logo.png";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 
-const LogIn = () => {
-  const [state, setState] = useState({
-    email:'',
-    password:''
-
-  });
-
-  const handleChange = (event)=>{
-    const {name, value}=event.target;
-    setState({
-      ...state,
-      [name]:value
-    });
-  }
-
-  const handleSubmit = (event)=>{
-    event.preventDefault();
-    console.log('state',state);
-  }
-
+const LogIn = ({ setLoggedIn }) => {
+  const [email, setemail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://api.gharjaggamarket.com/api/login/",
+        { email, password }
+      );
+      const { access } = response.data;
+      console.log(access);
+      localStorage.setItem("token", access);
+      setLoggedIn(true);
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+  };
   return (
     <>
       <div className="container d-flex  justify-content-center align-items-center">
@@ -33,8 +32,7 @@ const LogIn = () => {
             <img src={logo} alt="" />
           </div>
           <h2 className="text-center">LOGIN</h2>
-
-          <form onSubmit={handleSubmit}  className="form-element">
+          <form onSubmit={handleSubmit} className="form-element">
             <div className="form-group ">
               <label className="control-label " htmlFor="email">
                 Email Address
@@ -49,9 +47,9 @@ const LogIn = () => {
                   id="email"
                   name="email"
                   type="email"
+                  value={email}
+                  onChange={(e) => setemail(e.target.value)}
                   required
-                  value={state.email}
-                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -68,10 +66,10 @@ const LogIn = () => {
                   placeholder="Enter Password"
                   id="password"
                   name="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   type="password"
                   required
-                  value={state.password}
-                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -94,5 +92,4 @@ const LogIn = () => {
     </>
   );
 };
-
 export default LogIn;
