@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import logo from '../general/assets/logo.png'
 import { NavLink } from 'react-router-dom'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot,FaPhone } from "react-icons/fa6";
@@ -12,7 +11,7 @@ const Footer = () => {
             <div className="footer-line">
                 <Row>
                     <Col lg={4} md={6} className='text-center'>
-                    <div className="navbar-brand">  <img src={logo} alt=""  /></div>
+                    
                     <p>The Ghar Jagga Market is a real estate that helps you to sell your property in a fast way.
                     We are a trusted platform dedicated to helping you find your dream property. 
                     </p>
