@@ -22,11 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route
             path="about"
-            element={
-              <ProtectedRoute user={user}>
-                <About />
-              </ProtectedRoute>
-            }
+            element={<About />}
           />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<LogIn />} />
